@@ -8,6 +8,7 @@ namespace Duello
 {
     public class Budget
     {
+        //penerapan open close principle dan abstraksi dalam class budget
         public string namaBudget { get; set; }
         public double jumlahUang { get; set; }
         public Budget(string namaBudget, double jumlahUang)
@@ -16,6 +17,9 @@ namespace Duello
             this.jumlahUang = jumlahUang;
         }
         private List<TotalBudget> allTotal = new List<TotalBudget>();
+        
+        //penerapan single responsibility berupa class budget yang hanya dipakai untuk menghitung berapa budget yang ada.
+
         public void tambahIncome(double jumlahIncome, DateTime date, string namaIncome)
         {
             if (jumlahIncome <= 0)
@@ -48,6 +52,7 @@ namespace Duello
 
             return report.ToString();
         }
+        //penerapan polimorfisme
         public virtual void LakukanPenjumlahanBudget() { }
     }
 }

@@ -12,6 +12,7 @@ namespace Duello
             double jumlahUang = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine($"Budget dengan nama {namaBudget} dan jumlah {jumlahUang} IDR sudah dibuat!");
             var budget1 = new Budget(namaBudget, jumlahUang);
+            budget1.tambahIncome(jumlahUang, DateTime.Now, "inisialisasi budget");
 
             Console.WriteLine("Selamat datang di menu utama. Silakan pilih apa yang ingin anda lakukan");
             bool Exit = false;

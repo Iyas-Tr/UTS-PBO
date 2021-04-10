@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Duello
 {
+    //class yang mengenkapsulasi proses penghitungan budget setelah income dan expense
     public class TotalBudget
     {
         public double Jumlah { get; }
